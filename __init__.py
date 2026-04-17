@@ -38,6 +38,19 @@ from .visualization import (
     plot_daily_by_region,
 )
 
+# Post-departure direction analysis
+from .direction import (
+    PORT_DIRECTION_MAP,
+    compute_post_departure_bearings,
+    compute_pre_arrival_bearings,
+    estimate_direction_areas,
+    plot_departure_directions,
+    plot_port_directions,
+    plot_port_routes_on_map,
+    summarize_directions,
+    summarize_port_directions,
+)
+
 # Comparison functions (cross-period)
 from .comparison import (
     compare_parking_distributions,
@@ -68,6 +81,16 @@ __all__ = [
     "plot_regional_vessel_type",
     "plot_daily_by_vessel_type",
     "plot_daily_by_region",
+    # Direction analysis
+    "PORT_DIRECTION_MAP",
+    "compute_post_departure_bearings",
+    "compute_pre_arrival_bearings",
+    "estimate_direction_areas",
+    "plot_departure_directions",
+    "plot_port_directions",
+    "plot_port_routes_on_map",
+    "summarize_directions",
+    "summarize_port_directions",
     # Comparison
     "compare_parking_distributions",
     "compare_parking_dashboard",
